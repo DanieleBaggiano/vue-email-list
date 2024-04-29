@@ -14,6 +14,7 @@
         <div class="emails" v-if="email.length === 10">
             <span v-for="item in email" :key="item">{{ item }}</span>
         </div>
+        <p v-if="isLoading === true">Loading...</p>
     </div>
     
     <!-- axios -->
